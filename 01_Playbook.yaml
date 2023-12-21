@@ -1,8 +1,6 @@
 - name: Performing PING operation
-  host: 172.31.44.161
+  host: web
   become: yes
   tasks:
   - name: pinging to remote server
-  ansible.builtin.package:
-      name: ping
-      state: prasent
+  ansible.builtin.ping:
