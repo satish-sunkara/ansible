@@ -1,11 +1,11 @@
 - name: Declaring variable promt Level
   hosts: localhost
-  vars_promt:
+  vars_prompt:
   - name: USERNAME
-    promt: "Please Enter Username :"
+    prompt: "Please Enter Username :"
     private: false
   - name: PASSWORD
-    promt: "Please Enter Password :"
+    prompt: "Please Enter Password :"
     private: true
   tasks:
   - name: Promt level declaration
