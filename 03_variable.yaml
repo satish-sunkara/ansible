@@ -6,5 +6,8 @@
     Duration: 110hrs
   tasks:
   - name: Validating PLAY variables
+    vars:
+      course: Devops with aws
+      duration: 140HRS
     ansible.builtin.debug:
       msg: Hi i am learning {{course}} course having {{Duration}} with trainer is {{Trainer}}
