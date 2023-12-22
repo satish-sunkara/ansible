@@ -3,6 +3,6 @@
   vars_files:
     variable_file.yaml
   tasks:
-  - name: File level variables
+  - name: Validating PLAY variables
     ansible.builtin.debug:
-      ms: Ho am learning {{course}} course of having {{Duration}} with trainer {{Trainer}}
+      msg: Hi i am learning {{course}} course having {{Duration}} with trainer is {{Trainer}}
