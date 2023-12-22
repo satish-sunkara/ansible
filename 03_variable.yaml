@@ -7,4 +7,4 @@
   tasks:
   - name: Validating PLAY variables
     ansible.builtin.debug:
-      msg: Hi i am learning "{{course}}" course having "{{Duration}}" with trainer is "{{Trainer}}"
+      msg: "Hi i am learning "{{course}}" course having "{{Duration}}" with trainer is "{{Trainer}}""
