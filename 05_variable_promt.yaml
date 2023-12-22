@@ -1,0 +1,13 @@
+- name: Declaring variable promt Level
+  hosts: localhost
+  vars_promt:
+  - name: USERNAME
+    promt: "Please Enter Username :"
+    private: false
+  - name: PASSWORD
+    promt: "Please Enter Password :"
+    private: true
+  tasks:
+  - name: Promt level declaration
+    ansible.builtin.debug:
+      msg: "Username is : {{USERNAME}} and Password is : {{PASSWORD}}"
