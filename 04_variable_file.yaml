@@ -1,0 +1,8 @@
+- name: declaring variable from file
+  hosts: localhost
+  vars_file:
+    variable_file.yaml
+  tasks:
+  - name: File level variables
+    ansible.builtin.debug:
+      ms: Ho am learning {{course}} course of having {{Duration}} with trainer {{Trainer}}
