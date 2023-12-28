@@ -14,3 +14,8 @@
   - name: print the user RC
     ansible.builtin.debug:
       msg: "The output is :{{user.rc}}"
+
+  - name: Checking the condition for user availability
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0
