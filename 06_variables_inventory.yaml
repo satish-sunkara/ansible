@@ -3,4 +3,4 @@
   tasks:
   - name: variables from Invntory
     ansible.builtin.debug:
-      msg: "Hi i am learmimg {{course}} of having {{Duration}} along with trainer {{Trainer}}"
+      msg: Hi i am learmimg {{course}} of having {{Duration}} along with trainer {{Trainer}}
