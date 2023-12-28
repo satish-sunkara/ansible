@@ -10,3 +10,7 @@
   - name: printing the user
     ansible.builtin.debug:
       msg: "The output is: {{user}}"
+
+  - name: print the user RC
+    ansible.builtin.debug:
+      msg: "The output is :{{user.RC}}"
