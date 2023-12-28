@@ -4,6 +4,8 @@
   - name: Installing 
     ansible.builtin.debug:
       msg: "Installing pkg {{item}}"
+      name: "{{item}}"
+      state: prasent
     loop:
     - git
     - wget
