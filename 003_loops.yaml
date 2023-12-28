@@ -5,7 +5,7 @@
   - name: Installing 
     ansible.builtin.package:
       name: "{{item}}"
-      state: prasent
+      state: present
     loop:
     - git
     - wget
