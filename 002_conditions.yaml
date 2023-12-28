@@ -1,12 +1,12 @@
 - name: Checking user availability
   become: yes
   hosts: localhost
-  - tasks:
-    name: checking ID od user
+  tasks:
+  - name: checking ID od user
     ansible.builtin.command: id roboshop
     register: user
     ignore_errors: true
 
-- name: printing the user
-  ansible.builtin.debug:
-    msg: "The output is: {{user}}"
+  - name: printing the user
+    ansible.builtin.debug:
+      msg: "The output is: {{user}}"
