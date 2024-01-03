@@ -1,0 +1,6 @@
+- name: Performing PING operation
+  hosts: web
+  become: yes
+  tasks:
+  - name: pinging to remote server
+    ansible.builtin.ping:
